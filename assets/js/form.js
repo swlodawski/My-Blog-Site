@@ -2,7 +2,7 @@ const userName = document.getElementById('userbox');
 const title = document.getElementById('titlebox');
 const content = document.getElementById('contentbox');
 const submit = document.getElementById('submitbutton');
-let mode = 'light';
+
 
 
 
@@ -30,7 +30,7 @@ function saveBlog() {
     document.getElementById('myForm').addEventListener
 
 
-    document.getElementById('form section').addEventListener
+    document.getElementById('myForm').addEventListener
     ('submit', function(event) {
         event.preventDefault();
 
@@ -64,7 +64,7 @@ function validateForm() {
     return true;
 }
 
-themeswither.addEventListener('click', function() {
+themeswitcher.addEventListener('click', function() {
     if (mode === 'light') {
         mode = 'dark';
     container.setAttribute('class', 'light');    
@@ -74,7 +74,7 @@ themeswither.addEventListener('click', function() {
     }
     });
 
-    themeswither.addEventListener('click', function() {
+    themeswitcher.addEventListener('click', function() {
 
     })
 

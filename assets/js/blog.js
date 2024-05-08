@@ -7,7 +7,7 @@ themeswitcher.addEventListener('click', function() {
         mode = 'dark';
     container.setAttribute('class', 'light');    
     } else {
-        'mode' = 'light';
+        mode = 'light';
     container.setAttribute('class', 'dark');
     } 
     });
