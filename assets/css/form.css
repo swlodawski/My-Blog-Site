@@ -2,6 +2,52 @@
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
-form {
+.card {
+    display: inline-block;
+    width: 50%;
+    min-height: auto;
+    background: white;
+    padding-top: 20px;
+    margin: 80px; 
+    padding-right: 90px;
+}
+
+.card::after {
+    content: " ";
+    display: block;
+    clear: both;  
+  }
+
+#titlebox {
+    display: block;
+    min-height: 0px;
+    margin-top: 10px;
     width: 100%;
+    background-color: azure;
+}
+
+#contentbox {
+    display: block;
+    min-height: 0px;
+    margin-top: 10px;
+    width: 100%;
+    background-color: azure;
+}
+
+#userbox {
+    display: block;
+    min-height: 0px;
+    margin-top: 10px;
+    width: 100%;
+    background-color: azure;
+}
+
+.light {
+    background-color: white;
+    color: black;
+}
+
+.dark {
+    background-color: black;
+    color: white;
 }
