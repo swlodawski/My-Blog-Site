@@ -16,6 +16,13 @@ p {
     padding-left: 20px;
 }
 
+main {
+    flex-direction: column;
+    padding-left: 20px;
+    overflow-y: scroll;
+    height: calc(100vh - 288px);
+}
+
 header {
     background-color: white var(--main-color);
     margin: 0;
@@ -25,11 +32,6 @@ header {
     justify-content: space-between;
     align-items: center;
     border-bottom: 20px double aqua;
-}
-
-footer li {
-    justify-content: baseline;
-    align-items: first baseline;
 }
 
 footer ul li {
