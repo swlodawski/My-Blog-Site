@@ -24,6 +24,7 @@
     margin-top: 10px;
     width: 100%;
     background-color: azure;
+    color: black;
 }
 
 #contentbox {
@@ -32,6 +33,7 @@
     margin-top: 10px;
     width: 100%;
     background-color: azure;
+    color: black;
 }
 
 #userbox {
@@ -40,6 +42,7 @@
     margin-top: 10px;
     width: 100%;
     background-color: azure;
+    color: black;
 }
 
 .light {
@@ -50,4 +53,7 @@
 .dark {
     background-color: black;
     color: white;
+}
+.dark label {
+    color: azure;
 }

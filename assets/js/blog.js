@@ -2,19 +2,6 @@ const themeswitcher = document.querySelector('#theme-switcher')
 let container = document.querySelector('.container');
 let mode = 'light'
 
-themeswitcher.addEventListener('click', function() {
-    if (mode === 'light') {
-        mode = 'dark';
-    container.setAttribute('class', 'light');    
-    } else {
-        mode = 'light';
-    container.setAttribute('class', 'dark');
-    } 
-    });
-
-    themeswitcher.addEventListener('click', function() {
-
-    })
 
 function displayBlogPosts () {
     const blogPost = document.getElementById('blogPost');
@@ -41,5 +28,16 @@ function displayBlogPosts () {
     }
     displayBlogPosts();
 
+    themeswitcher.addEventListener('click', function() {
+    if (mode === 'light') {
+        mode = 'dark';
+    container.setAttribute('class', 'light');    
+    } else {
+        mode = 'light';
+    container.setAttribute('class', 'dark');
+    } 
+    });
 
-    
+    themeswitcher.addEventListener('click', function() {
+
+    })
