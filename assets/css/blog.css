@@ -17,13 +17,6 @@ p {
     padding-left: 20px;
 }
 
-main {
-    flex-direction: column;
-    padding-left: 20px;
-    overflow-y: scroll;
-    height: calc(100vh - 288px);
-}
-
 header {
     background-color: white var(--main-color);
     margin: 0;
@@ -35,18 +28,11 @@ header {
     border-bottom: 20px double aqua;
 }
 
-footer ul li {
-    flex-direction:column;
-    list-style: none;
-}
-
-h5 {
-    text-align: center;
-    margin: auto;
-    padding-bottom: 10px;
-    padding-left: 100px;
-    bottom: 0;
-    border-top: double aqua 20px;
+main {
+    flex-direction: column;
+    padding-left: 20px;
+    overflow-y: scroll;
+    height: calc(100vh - 288px);
 }
 
 .switch {
@@ -110,6 +96,17 @@ input:checked + .slider:before {
     border-radius: 50%;
 }
 
+h5 {
+    text-align: center;
+    margin: auto;
+    padding-bottom: 10px;
+    padding-left: 100px;
+    bottom: 0;
+    border-top: double aqua 20px;
+}
+
+
+
 .light {
     background-color: white;
     color: black;
@@ -127,5 +124,10 @@ footer {
     padding-left: 10px;
     bottom: 0px;
     font-size: 20px;
+}
+
+footer ul li {
+    flex-direction:column;
+    list-style: none;
 }
 
