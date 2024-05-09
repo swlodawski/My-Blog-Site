@@ -10,8 +10,8 @@ function displayBlogPosts () {
 
     blogList.forEach(element => {
         const child = document.createElement('div')
-        const title = document.createElement('h1')
-        const userName = document.createElement('h5')
+        const title = document.createElement('h2')
+        const userName = document.createElement('h3')
         const content = document.createElement('p')
 
         title.innerHTML = element.title
@@ -37,7 +37,3 @@ function displayBlogPosts () {
     container.setAttribute('class', 'dark');
     } 
     });
-
-    themeswitcher.addEventListener('click', function() {
-
-    })

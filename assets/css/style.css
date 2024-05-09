@@ -118,6 +118,13 @@ label {
     display: flex;
     border-right: double 20px aqua;
 }
+.dark h1 {
+    color: black;
+}
+
+.light h1 {
+    color: aqua;
+}
 
 .card {
     display: inline-block;

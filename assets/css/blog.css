@@ -96,7 +96,7 @@ input:checked + .slider:before {
     border-radius: 50%;
 }
 
-h5 {
+h4 {
     text-align: center;
     margin: auto;
     padding-bottom: 10px;
@@ -104,8 +104,6 @@ h5 {
     bottom: 0;
     border-top: double aqua 20px;
 }
-
-
 
 .light {
     background-color: white;
