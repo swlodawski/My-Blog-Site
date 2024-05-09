@@ -120,11 +120,6 @@ input:checked + .slider:before {
     color: white;
 }
 
-.back {
-    border-radius: 50%;
-    background-color: blanchedalmond;
-}
-
 footer {
     width: 100%;
     position: absolute;

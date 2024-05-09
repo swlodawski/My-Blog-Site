@@ -64,17 +64,3 @@ function validateForm() {
     return true;
 }
 
-themeswitcher.addEventListener('click', function() {
-    if (mode === 'light') {
-        mode = 'dark';
-    container.setAttribute('class', 'light');    
-    } else {
-        mode = 'light';
-    container.setAttribute('class', 'dark');
-    }
-    });
-
-    themeswitcher.addEventListener('click', function() {
-
-    })
-
