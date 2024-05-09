@@ -2,10 +2,7 @@ const userName = document.getElementById('userbox');
 const title = document.getElementById('titlebox');
 const content = document.getElementById('contentbox');
 const submit = document.getElementById('submitbutton');
-
-
-
-
+// I set variables for all my form elements from the index.html sheet that the user will intereact with and ffor which I want to pull the value inputs.
 
 function saveBlog() {
     
@@ -16,7 +13,7 @@ function saveBlog() {
     title: title.value.trim(),
     content: content.value.trim(),
     };
-
+// I am declaring an object with multiple key value pairs that I will push into an empty array of objects that will appear on the blog content page.
     if(blogList === null){
         localStorage.setItem('blogList', JSON.stringify([post]));
     } else {

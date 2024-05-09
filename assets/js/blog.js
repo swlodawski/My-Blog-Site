@@ -1,7 +1,7 @@
 const themeswitcher = document.querySelector('#theme-switcher')
 let container = document.querySelector('.container');
 let mode = 'light'
-
+// I declared the variable to reference the theme switcher and toggle container and set the variable for the light mode which will be the switch default setting.
 
 function displayBlogPosts () {
     const blogPost = document.getElementById('blogPost');
@@ -37,3 +37,4 @@ function displayBlogPosts () {
     container.setAttribute('class', 'dark');
     } 
     });
+    // I brought in the event listener function to allow the them switcher to toggle from light to dark based on user interaction. Additionally I set the light as default with the ability to swich the container attribute to dark mode.
