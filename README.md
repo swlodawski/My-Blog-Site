@@ -25,9 +25,9 @@ I was asked to create a personal blog webpage with both a landing page and a pop
 2. I used gitpages to deploy this project so it could be viewed as a webpage.
 3. I have included screenshots of my deployed page, both the landing page and blog 
    content page.
-   Landing Page Light Mode: ![alt text](image.png)
-   Landing Page Dark Mode: ![alt text](image-2.png)
-   Content Page: ![alt text](image-1.png)
+   Landing Page Light Mode: <img src="./assets/images/image.png>
+   Landing Page Dark Mode: <img src="./assets/images/image-1.png>
+   Content Page: <img src="./assets/images/image-2.png>
 4. Additionally I have included the url to my deployed webpage. url: https://swlodawski.github.io/My-Blog-Site/
 
 
