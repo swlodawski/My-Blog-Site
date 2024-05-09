@@ -13,7 +13,7 @@ function saveBlog() {
     title: title.value.trim(),
     content: content.value.trim(),
     };
-// I am declaring an object with multiple key value pairs that I will push into an empty array of objects that will appear on the blog content page.
+// I am declaring an object named post with multiple key value pairs that I will push into an empty array of objects that will appear on the blog content page.
     if(blogList === null){
         localStorage.setItem('blogList', JSON.stringify([post]));
     } else {
