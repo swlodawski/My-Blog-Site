@@ -117,7 +117,7 @@ h4 {
 
 footer {
     width: 100%;
-    position: absolute;
+    position: fixed;
     padding-bottom: 10px;
     padding-left: 10px;
     bottom: 0px;
