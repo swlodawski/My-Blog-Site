@@ -5,7 +5,7 @@ let mode = 'light'
 
 function displayBlogPosts () {
     const blogPost = document.getElementById('blogPost');
-// I am declaring the blogPost variable will be accessed by the displayBlogPosts function.
+// I am declaring the blogPost variable that will be accessed by the displayBlogPosts function.
     const blogList = JSON.parse(localStorage.getItem('blogList'));
 // I am setting the variable to retrieve the blogList information from localstorage. And convert it from a JSON string back into an object.
     blogList.forEach(element => {
@@ -17,14 +17,14 @@ function displayBlogPosts () {
         title.innerHTML = element.title
         title.innerHTML = element.userName
         title.innerHTML = element.content
-//I am telling the computer that when these elements are created. I want the user values for the userName, title and content inputs to appear in the DOM.
+//I am telling the computer that when these elements are created. I want the user input values for the userName, title and content inputs to appear in the DOM.
         child.appendChild(title)
         child.appendChild(userName)
         child.appendChild(content)
-//I am telling the computer to append the actual DOM so the newly created elements can now appear on the broswer screen.
+//I am telling the computer to append the actual DOM so the newly created elements can now appear on the browser screen.
         blogPost.appendChild(child)
     }); 
-//This will alow the newly created elements to appear within the specied blogPost section of my blog.html file. 
+//This will alow the newly created elements to appear within the specified blogPost section of my blog.html file. 
     }
     displayBlogPosts();
 //Finally I am calling the displBlogPosts Function. 
@@ -37,4 +37,4 @@ function displayBlogPosts () {
     container.setAttribute('class', 'dark');
     } 
     });
-    // I brought in the event listener function to allow the them switcher to toggle from light to dark based on user interaction. Additionally I set the light as default with the ability to swich the container attribute to dark mode.
+// I brought in the event listener function to allow the theme switcher to toggle from light to dark mode based on user interaction. Additionally, I set the light as default mode with the ability to swich the container attribute to dark mode.

@@ -2,12 +2,12 @@ const userName = document.getElementById('userbox');
 const title = document.getElementById('titlebox');
 const content = document.getElementById('contentbox');
 const submit = document.getElementById('submitbutton');
-// I set variables for all my form elements from the index.html sheet that the user will intereact with and ffor which I want to pull the value inputs.
+// I set variables for all my form elements from the index.html sheet that the user will interact with and for which I want to pull the value inputs.
 
 function saveBlog() {
-//I am declaring the variable for the function that will save the user input values that will be put into localstorage that will then be retreived and be rendered on the blog contebnt page. 
+//I am declaring the variable for the function that will save the user input values that will be put into localstorage and will then be retreived and rendered to the blog content page. 
   const blogList = JSON.parse(localStorage.getItem('blogList'));
-
+// I am telling the computer to retrieve the blogList input from localstorage and convert that information from a JSON string, back into an object.
     const post = { 
     userName: userName.value.trim(),
     title: title.value.trim(),
@@ -16,12 +16,12 @@ function saveBlog() {
 // I am declaring an object named post with multiple key value pairs that I will push into an empty array of objects that will appear on the blog content page.
     if(blogList === null){
         localStorage.setItem('blogList', JSON.stringify([post]));
-//I am tellingt the computer to ensure that if the input values are null insure the user has inputted something in a fields. 
+//I am telling the computer that if the input values are null, ensure the user has inputted something in all fields before setting the items in localstorage. 
     } else {
         blogList.push(post)
 //If the user has inoputed all values then push that input into the object post. 
         localStorage.setItem('blogList', JSON.stringify(blogList));
-//I am telling the computer after the user input has been pushed into the object array to then store it in localstorage to later be retireved. As well as convert it to a JSON string value. 
+//I am telling the computer after the user input has been pushed into the object array to then store it in localstorage to later be retrieved. As well as convert it to a JSON string value. 
     }
 }
 
@@ -45,7 +45,7 @@ function validateForm() {
     const userName = document.getElementById('userbox').value.trim();
     const title = document.getElementById('titlebox').value.trim();
     const content = document.getElementById('contentbox').value.trim(); 
-//I am catching the user input values for each inpurt box and then using the trim to remove any extra whitspace. 
+//I am catching the user input values for each input box and then using the trim to remove any extra whitspace. 
     if( userName === '') {
         alert('Please Enter Your username');
         return false;

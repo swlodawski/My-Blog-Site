@@ -10,4 +10,4 @@ container.setAttribute('class', 'dark');
 } else {mode = 'light';
 container.setAttribute('class', 'light');}
 });
-    // I brought in the event listener function to allow the them switcher to toggle from light to dark based on user interaction. Additionally, I set the light mode as default with the ability to swich the container attribute to dark mode.
+// I brought in the event listener function to allow the them switcher to toggle from light to dark based on user interaction. Additionally, I set the light mode as default with the ability to swich the container attribute to dark mode.
